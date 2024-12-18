@@ -1,10 +1,9 @@
 package endpoints;
 
 import io.restassured.RestAssured;
-import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
-public class LoginEndPoint
+public class ReqresinEndPoint
 {
     String path = "/api/login";
 
@@ -19,5 +18,7 @@ public class LoginEndPoint
                 .header("Content-Type","application/json")
                 .body(payload)
                 .post(path);
+
+
     }
 }
